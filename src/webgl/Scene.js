@@ -68,6 +68,9 @@ class Scene {
 
     tick = (time, deltaTime, frame) => {
         this.renderer.render(this.scene, this.camera);
+
+        this.mesh.rotation.z += 0.01;
+        this.mesh.rotation.y += 0.01
     };
 }
 
